@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Box Lift (margins)</title>
+  <style>
+
+    .building{
+      width: 200px;
+      height: 500px;
+      background-color: #999;
+      margin: auto;
+
+    }
+    .shaft{
+      width: 50px;
+      height: 500px;
+      background: #333;
+      margin: auto;
+    }
+    .start{
+      width: 40px;
+      height: 5px;
+      background-color: red;
+      margin: /*414px*/ auto;
+    }
+    .lift{
+      width: 40px;
+      height: 80px;
+      background: #111;
+      color: white;
+      margin: 414px auto;
+    }
+  </style>
+  <!--
+   * Raspundeti la intrebarea: - daca vom sterge blocul "start" ce se va schimba?
+     -No sa se adauge margine, Margine si era. Doar ca no sa se mai includa in blocul parinte(o sa iasa in afara lui)
+
+    * Raspundeti la intrebarea: - ce rol joaca blocul "start"?
+      -Joaca rolul de pornire si de oprire a ascensorului
+      -In caz ca valoarea blocului start e egala cu a liftului atunci blocul parinte se deplasaza in jos
+     -In caz cand valoarea e mai mare iese liftul din blocul parinte
+
+  --->
+
+</head>
+<body>
+
+
+<div class="building">
+  <div class="shaft">
+    <div class="start"></div>
+    <div class="lift">
+      BOB
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
