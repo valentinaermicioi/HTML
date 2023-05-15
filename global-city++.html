@@ -1,0 +1,145 @@
+<!---
+    keypoints:
+    -inline
+    -block
+    -inline-block
+    -box:top,right, bottom, left + margin, padding, width, height
+    -origin/flow of elements
+
+--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>City Block | CSS</title>
+    <style>
+      body{
+        background-color:#222;
+      }
+      #city{
+        background-color:AliceBlue ;
+          width: 400px;
+          height: 400px;
+          border: 5px solid CadetBlue;
+      }
+      #square{
+          background-color: DarkGrey;
+          width: 150px;
+          height: 150px;
+          display: inline-block;
+          margin-right: -4px;
+      }
+      .streetA{
+          background-color: Gainsboro;
+          width: 250px;
+          height: 150px;
+          float: right;
+      }
+      .streetB{
+          background-color: DimGray;
+          width: 150px;
+          height: 250px;
+      }
+      .left-band{
+          border-right: 2px solid white;
+          width: 73px;
+          height: inherit;/*inaltimea fix ca la blocul parinte*/
+      }
+      .band-marker-v{
+          border-right: 2px dashed floralwhite;
+          width: 34px;
+          height: inherit;
+      }
+      .top-band{
+          border-bottom: 2px solid white;
+          width:250px;
+          height: 75px;/*inherit-inaltimea fix ca la blocul parinte */
+      }
+      .band-marker-horizontal{
+          border-bottom: 2px dashed floralwhite;
+          width: 250px;
+          height: 34px;
+          display: inline-block;
+      }
+       .band-1{
+          border-top: 2px dashed floralwhite;
+          display: inline-block;
+           width: 125px;
+
+      }
+      .band-2{
+          display: inline-block;
+          border-left: 2px dashed floralwhite;
+          width: 150px;
+          height: 111px;
+          padding: 34px 8px 0 7px;
+
+
+      }
+
+     .band-3{
+          border-left: 2px solid white;
+         display: inline-block;
+             height: 76px;
+         margin-left: 30px;
+
+
+
+      }
+      .band-4{
+          border-top: 2px solid white;
+          display: inline-block;
+          width: 77px;
+          padding-top: 12px;
+
+      }
+      .square-block{
+          width: 194px;
+         margin: 3px  0  0 34px;
+          height: 116px;
+      }
+
+
+
+    </style>
+</head>
+<body>
+<!--- HW1: finish the streets bands
+--->
+  <div id="city">
+      <div id="square">
+          SQUARE
+          <div class="square-block">
+              <div class="band-1">
+              </div>
+              <div class="band-2">
+
+                  <div class="band-3">
+                      <div class="band-4">
+
+                      </div>
+                  </div>
+
+              </div>
+
+          </div>
+      </div>
+      <div class="streetA">
+          <div class="top-band">
+              <div class="band-marker-horizontal">
+
+              </div>
+          </div>
+      </div>
+      <div class="streetB">
+          <div class="left-band">
+              <div class="band-marker-v">
+
+              </div>
+
+          </div>
+      </div>
+  </div>
+
+</body>
+</html>
