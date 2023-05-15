@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Absolute Position</title>
+  <style>
+    body{
+      background-color: #222;
+      height: 2000px;
+    }
+    .parent{
+      /*border:2px solid orange;*/
+      padding: 10px;
+      display: inline-block;
+
+    }
+    .parent div{
+      width: 100px;
+      height: 100px;
+    }
+    .parent .child-1{
+      background-color: #555;
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      z-index: 2;
+    }
+    .parent .child-2{
+      background-color: #888;
+      /*POSITION  RIGHT HERE!!!:)*/
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      z-index: 1;
+
+    }
+    .parent .child-3{
+      background-color: #bbb;
+      position: absolute;
+      top:0;
+      left:0;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+<!---HW1: formular browser calculates
+BODY height ???
+HW2: arange the elements in the next maner--->
+<div class="parent">
+  <div class="child-1">1</div>
+  <div class="child-2">2</div>
+  <div class="child-3">3</div>
+</div>
+
+</body>
+</html>
