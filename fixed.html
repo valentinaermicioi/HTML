@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS FIXED Position</title>
+    <style>
+        body{
+            background-color: #222;
+            height: 2000px;
+        }
+        /*.parent{
+        <!--border: 2px solid orange;
+        padding:10px;
+        display:inline-block;--->*/
+        .parent div{
+            width: 100px;
+            height: 100px;
+        }
+        .parent .child-1{
+            background-color: #555;
+
+        }
+        .parent .child-2{
+            background-color: #888;
+
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+
+        }
+        .parent .child-3{
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child-1">1</div>
+        <div class="child-2">2</div>
+        <div class="child-3">3</div>
+
+    </div>
+
+</body>
+</html>
